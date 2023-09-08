@@ -1,0 +1,102 @@
+<!-- <button class="btn btn-primary" (click)="callingapi()">Get Api</button><br><br><br> -->
+
+<!-- <button (click)="fetchingapi()">Api using json server</button> -->
+<div class="header">
+    <h1 style="text-align: center; font-weight: 100; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Check the phone details here</h1><hr>
+</div>
+
+<!-- testing code -->
+<div  class="flex-container">
+
+    <div  *ngFor="let value of values"  style="margin-bottom: 44px;">
+        <div class="image-container">
+            <img class="item" src="{{value.images[0]}}" alt="Main Image">
+            <div class="hover-images">
+                <img src="{{value.images[1]}}" alt="Hover Image 1">
+                <!-- <img src="{{value.images[2]}}" alt="Hover Image 2"> -->
+                <!-- Add more images as needed -->
+              </div>
+        </div>
+
+          
+          <br><br>
+          <span class="itemText">
+             {{value.title}} <br><br>
+             <b>₹</b> {{value.price}}<br><br>
+            {{value.discountPercentage}}%<br><br>        
+            <div class="Stars" style="--rating: {{value.rating}};" aria-label="Rating of this product is 2.3 out of 5."></div>
+
+          </span>
+            
+        </div>
+    </div>
+
+<!-- 
+    <h2>Angular Star Rating Example</h2>
+<ngb-rating [max]="5" [(rate)]="starRating" [readonly]="false"></ngb-rating> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div class="tooltip" style="align-items: center;" *ngFor="let value of values">
+    <img class="iphone"src="https://images.unsplash.com/photo-1523206489230-c012c64b2b48?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8aXBob25lfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60">
+    <span class="tooltiptext">Phone Brand : {{Brandname}} <br>
+        Price: {{price}} <br>
+        Discountpercentage: {{discountpercentage}} <br>
+        Rating : {{rating}}
+    </span> 
+
+  </div> -->
+
+  <!-- <uL>
+    <li *ngFor="let show of pro "> 
+         {{show.title}}
+    </li>
+  </uL> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <br><br><br><br><br><br>
+  <button (click)="fetchingapi()">Api using json server</button>

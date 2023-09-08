@@ -1,0 +1,182 @@
+:root {
+    --star-size: 60px;
+    --star-color: #fff;
+    --star-background: #fc0;
+  }
+
+body{
+    overflow: hidden;
+    width: 100%;
+}
+/* Tooltip container */
+.tooltip {
+  position: relative;
+  /* display: inline-block; */
+  text-align: center;
+  /*border-bottom: 1px dotted black;  If you want dots under the hoverable text */
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 200px;
+  height: 100px;
+  background-color: rgb(87, 198, 241);
+  color: #fff;
+  /* text-align: center; */
+  padding: 5px 0;
+  border-radius: 6px;
+  margin-left: 6px;
+ 
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+.iphone{
+     max-height: 200px;
+     max-width: 200px;
+
+}
+
+
+/* for different phones */
+
+.flex-container {
+    display: flex;  
+    max-width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    order:5;
+    align-items: flex-start;
+  }
+  /* .flex-container > div {
+    background-color: #f1f1f1;
+    margin: 50px;
+    padding: 50px;
+    font-size: 30px;
+    max-width: 200px;
+    max-height: 200px; 
+
+  } */
+
+/* .imagesclass{
+    max-width: 219px;
+    margin-bottom: 15px;
+    margin-right: 170px;
+    margin-top: 33px;
+    
+} */
+#wrapper {
+    display: flex;
+    justify-content: space-between;
+    order:5;
+  }
+.item{
+  flex-basis: calc(25% - 100px); 
+  margin-bottom: 10px;
+  padding: 10px;
+  height: 322px;
+  width: 272px;
+  /* max-width: 300px; */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+}
+.item:hover {
+    background-color: #e6e6e6;
+  }
+
+.itemText {
+    text-align: center;
+    display: block;
+    font-size: 14px;
+    color: #e0740e;
+
+    /* for font style */
+  font-family: Arial, sans-serif; /* Set the font family (fall back to sans-serif if Arial is not available) */
+  font-size: 16px; /* Set the base font size */
+  font-weight: bold; /* Set the font weight (options: normal, bold, bolder, lighter, 100-900) */
+  font-style: normal;
+  
+  }
+
+
+
+
+  /* testing for stars */
+
+  /* :root {
+    --star-size: 60px;
+    --star-color: #fff;
+    --star-background: #fc0;
+  } */
+  
+  .Stars {
+    --percent: calc(var(--rating) / 5 * 100%);
+    
+    display: inline-block;
+    font-size: 60px;
+    font-family: Times; 
+    line-height: 1;
+    
+    &::before {
+      content: '★★★★★';
+      letter-spacing: 3px;
+      background: linear-gradient(90deg, #fc0 var(--percent),  #fff 
+      var(--percent));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+  
+  
+  
+  body {
+    background: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  * {
+    position: relative;
+    box-sizing: border-box;
+  }
+
+  /* test to check the multiple images on hover */
+
+  /* Container to wrap the main image and hover images */
+.image-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Hide the hover images initially */
+  .hover-images {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    pointer-events: none; /* Prevent hover events on hidden images */
+    transition: opacity 0.3s ease;
+    height: 322px;
+    width: 272px;
+  }
+  .image-container img {
+    height: 322px;
+    width: 272px;
+  }
+  
+  /* When the main image is hovered, show the hover images */
+  .image-container:hover .hover-images {
+    opacity: 1;
+  }
+  

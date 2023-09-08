@@ -1,0 +1,77 @@
+<!-- <p>login-ui works!</p> -->
+<!-- <div class="r">
+    <div class="col-md-6 offset-md-3 mt-5" class="alg">
+        <div class="card">
+            <div class="cardhead">
+                <h3>Basic Login Example</h3>
+            </div>
+
+            <form>
+                <div>
+                    <label for="username/email">Username/Email : </label>
+                    <input type="text">
+                </div><br>
+
+                <div>
+                     <label for="password">Password : </label>
+                     <input type="password">
+
+                </div><br>
+                 
+                <button class="btn btn-primary" style="margin-left: 90px;" > Testing button  </button>
+            </form>
+        </div>
+
+    </div>
+</div> -->
+
+<!-- <h1>testing testing </h1> -->
+
+
+<!-- another testing -->
+<!-- <button (click)="checkobs()">click to check the observable here</button> -->
+
+<h4 style="text-align: center;"><b>Heliware</b></h4>
+
+<div class="container" style="margin-left: 110px;
+margin-top: 20px;">
+    
+	<div class="screen">
+		<div class="screen__content">
+			<form class="login" [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+				<div class="login__field">
+					<i class="login__icon fas fa-user"></i>
+					<input type="text" class="login__input" placeholder="User name / Email" formControlName="email">
+				</div>
+				<div class="login__field">
+					<i class="login__icon fas fa-lock"></i>
+					<input type="password" class="login__input" placeholder="Password" formControlName="password">
+				</div>
+				<button class="button login__submit" >
+					<span class="button__text">Log In Now</span>
+	 				<i class="button__icon fas fa-chevron-right"></i>
+				</button>
+				
+				<button class="button login__submit" (click)="onregister()">
+					<span class="button__text">Register here</span>
+	 				<i class="button__icon fas fa-chevron-right"></i>
+				</button>
+
+			</form>
+			<!-- <div class="social-login">
+				<h3>log in via</h3>
+				<div class="social-icons">
+					<a href="#" class="social-login__icon fab fa-instagram"></a>
+					<a href="#" class="social-login__icon fab fa-facebook"></a>
+					<a href="#" class="social-login__icon fab fa-twitter"></a>
+				</div>
+			</div> -->
+		</div>
+		<div class="screen__background">
+			<span class="screen__background__shape screen__background__shape4"></span>
+			<span class="screen__background__shape screen__background__shape3"></span>		
+			<span class="screen__background__shape screen__background__shape2"></span>
+			<span class="screen__background__shape screen__background__shape1"></span>
+		</div>		
+	</div>
+</div>
